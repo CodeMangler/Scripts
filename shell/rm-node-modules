@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "-- Recursively deleting all node_modules folders under $1 --"
+find $1 -type d -name node_modules -exec rm -rf {} \;
+echo "-- DONE --"
