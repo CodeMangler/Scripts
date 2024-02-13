@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "-- Recursively deleting all bin folders under $1 --"
+find $1 -type d -name bin -exec rm -rf {} \;
+echo "-- Recursively deleting all obj folders under $1 --"
+find $1 -type d -name obj -exec rm -rf {} \;
+echo "-- DONE --"
